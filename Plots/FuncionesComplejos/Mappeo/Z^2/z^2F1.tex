@@ -1,0 +1,22 @@
+\begin{tikzpicture}[scale=0.7]
+    
+    \foreach \ang in {0,...,31} {
+        \draw [gray!40] (0,0) -- (\ang * 180 / 16:4);
+    }
+    \foreach \s in {0,0.5,...,3.5} {
+        \draw [gray!40] (0,0) circle (\s);
+    }
+    \path[fill=mlgb, fill opacity=0.6] (0,0)--(4,0) arc(0:90:4) --(0,0);
+    \path[fill=vorange, fill opacity=0.6] (0,0)--(4,0) arc(360:270:4)--(0,0);
+    
+    \draw[<->] (-4,0)--(4,0) node[right] {$R$};
+    \draw[<->] (0,-4)--(0,4) node[above]{$j$};
+    \draw [black,line width=0.5pt] circle (4);
+    \draw[line width=0.75pt,mdrd,|-|] (0.3827*0.5,0.9239*0.5) arc (67.5:112.5:0.5);
+    \draw[line width=0.75pt,mdblu,|-|] (0.3827,-0.9239) arc (-67.5:-112.5:1);
+    \draw[line width=0.75pt,mblk,|-|] (-0.1951*1.5,0.9808*1.5) arc (101.25:168.75:1.5);
+    
+   % \path[fill opacity=0.6,pattern=dots,pattern color=mdblu, even odd rule] (0,0)--(0,4) arc(90:180:4)--(0,0);
+   % \path[fill opacity=0.6,pattern=dots,pattern color=mdrd, even odd rule] (0,0)--(0,-4) arc(270:180:4)--(0,0);
+\end{tikzpicture}
+\caption*{Plano $z$}

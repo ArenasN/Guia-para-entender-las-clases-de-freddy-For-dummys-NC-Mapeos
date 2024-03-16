@@ -1,0 +1,12 @@
+\begin{tikzpicture}[scale=0.4]
+    \draw[thin,gray!40] (-5,-5) grid (5,5);
+    \draw[<->] (-5,0)--(5,0) node[right] {$R$};
+    \draw[<->] (0,-5)--(0,5) node[above]{$j$};
+    \coordinate (a) at (0,1);
+    
+    \fill[fill=mlgb, fill opacity=0.6,even odd rule] (a) circle (1.5) (a) circle (1);
+    \draw[fill=black] (a) circle(2pt) node[anchor=north east]{$z_0$};
+    \draw [black,line width=2pt](a) circle (1);
+    \draw [black,line width=2pt](a) circle (1.5);
+\end{tikzpicture}
+\caption*{Rotación}

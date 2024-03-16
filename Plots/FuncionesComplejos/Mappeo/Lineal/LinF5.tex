@@ -1,0 +1,24 @@
+\begin{tikzpicture}
+    \coordinate (a) at (1,0);
+    \draw[fill=mlgb] (a) circle(2pt) node[anchor=north west]{$z_0$};
+    
+    \draw[thin,mlgb] (-5,-5) grid (5,5);
+    %\draw[step=2,line width=0.75pt,black] (-5,-5) grid (5,5);
+    \draw[line width=0.75pt,black, dashed] (-5,0)--(5,0) node[right] {$R$};
+    \draw[line width=0.75pt,black, dashed] (0,-5)--(0,5) node[above]{$j$};
+    \draw[line width=1.5pt,<->] (-5,-1) node[left] {$j'$} --(5,-1) ;
+    \draw[line width=1.5pt,<->] (1,-5)--(1,5) node[above]{$R'$};
+    
+    \coordinate (1) at (2,1);
+
+    \fill[fill opacity=0.6, pattern=north east lines, pattern color=mlgb, even odd rule] (a) circle (1.5) (a) circle (1);
+    
+    \draw [mlgb,line width=1pt](a) circle (1);
+    \draw [mlgb,line width=1pt](a) circle (1.5);
+    
+    \fill[fill=mlgb, fill opacity=0.6,even odd rule] (1) circle (3) (1) circle (2);
+    \draw[fill=black] (1) circle(2pt) node[anchor=south west]{$z_0'$};
+    \draw [black,line width=2pt](1) circle (2);
+    \draw [black,line width=2pt](1) circle (3);
+\end{tikzpicture}
+\caption{Plano $w$ graficado sobre el plano $z$ siendo $f_{z}$ siendo una funcion lineal}

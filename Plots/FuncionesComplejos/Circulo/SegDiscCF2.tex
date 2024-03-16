@@ -1,0 +1,22 @@
+\begin{tikzpicture}
+    \draw[thin,gray!40] (-5,0) grid (5,6);
+    \draw[<->] (-5,0)--(5,0) node[right] {$R$};
+    \draw[<->] (0,0)--(0,6) node[above]{$j$};
+    \coordinate (a) at (1,1);
+    \coordinate (b) at (3,3);
+    \coordinate (c) at (-1,1);
+    \coordinate (d) at (-3,3);
+    \fill[fill=mlgb,opacity=0.6,even odd rule](a)--(b) arc (45:135:4.2426)--(c)  arc (135:45:1.4142)--(a) ;
+    
+    \draw[fill=black] (a) circle(2pt) node[anchor=north west]{$a$};
+    \draw[fill=black] (b) circle(2pt) node[anchor=south west]{$b$};
+    \draw[fill=black] (c) circle(2pt) node[anchor=north east]{$c$};
+    \draw[fill=black] (d) circle(2pt) node[anchor=south east]{$d$};
+    
+    \draw[line width=2pt,black,-] (a)--(b) node[midway, right]{$\overline{ab}$};
+    \draw[line width=2pt,black,-] (c)--(d) node[midway, left]{$\overline{cd}$};
+    \draw[line width=2pt,black,-] (b) arc (45:135:4.2426) node [midway,above]{$\Vec{bc}$};
+    \draw[line width=2pt,black,-] (a) arc (45:135:1.4142) node [midway,below]{$\Vec{da}$};
+    
+\end{tikzpicture}
+\caption{Segmento de disco en el plano complejo con lineas parametrizadas}

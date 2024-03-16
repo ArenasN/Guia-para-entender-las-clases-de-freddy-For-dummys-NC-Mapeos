@@ -1,0 +1,12 @@
+\begin{tikzpicture}
+    \draw[thin,gray!40] (-4,-4) grid (4,4);
+    \draw[<->] (-4,0)--(4,0) node[right] {$R$};
+    \draw[<->] (0,-4)--(0,4) node[above]{$j$};
+    \fill[fill=mlgb, fill opacity=0.6,even odd rule] (0,0) circle (3) (0,0) circle (1);
+    \draw[fill=black] (0,0) circle(2pt) node[anchor=north east]{$z_0$};
+    \draw[line width=1pt,|-|] (0,0) -- (0.707,0.707) node[midway,above,sloped]{$r_0$};
+    \draw[line width=1pt,|-|] (0,0) -- (-2.1213,2.1213) node[midway,above,sloped]{$r_1$};
+    \draw [black,line width=2pt](0, 0) circle (1);
+    \draw [black,line width=2pt](0, 0) circle (3);
+\end{tikzpicture}
+\caption{Disco en el plano complejo}

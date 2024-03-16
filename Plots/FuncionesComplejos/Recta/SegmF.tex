@@ -1,0 +1,10 @@
+\begin{tikzpicture}
+    \draw[thin,gray!40] (-2,-2) grid (2,2);
+    \draw[<->] (-2,0)--(2,0) node[right] {$R$};
+    \draw[<->] (0,-2)--(0,2) node[above]{$j$};
+    \draw [fill=black] (0.5,0.5) circle(2pt);
+    \draw [fill=black] (1.5,1.5) circle(2pt);
+    \draw[line width=2pt,black,-] plot[smooth,domain=0.5:1.5] (\x, {\x}) node[left]{$re^{j\gamma}$};
+    \draw[|-|] (1,0) arc (0:45:1) node [midway, right]{$\gamma$};
+\end{tikzpicture}
+\caption*{Segmento: $a\leq r \leq b$}

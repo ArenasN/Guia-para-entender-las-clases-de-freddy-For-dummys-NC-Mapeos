@@ -1,0 +1,8 @@
+\begin{tikzpicture}
+    \draw[thin,gray!40] (-2,-2) grid (2,2);
+    \draw[<->] (-2,0)--(2,0) node[right] {$x$};
+    \draw[<->] (0,-2)--(0,2) node[above]{$y$};
+    \draw[line width=2pt,black,stealth-stealth] plot[smooth,domain=-2:2] (\x, {\x}) node[]{$y=x\cdot c$};
+    \draw[|-|] (1,0) arc (0:45:1) node [midway, right]{$\tan^{-1}{(a)}$};
+\end{tikzpicture}
+\caption*{Recta real}

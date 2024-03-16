@@ -1,0 +1,25 @@
+\begin{tikzpicture}[scale=1.5]
+    \draw[thin,gray!40] (0,0) grid (4,4);
+    \draw[<->] (0,0)--(4,0) node[right] {$R$};
+    \draw[<->] (0,0)--(0,4) node[above]{$j$};
+    \coordinate (a) at (1,0.5);
+    \coordinate (b) at (3,0.5);
+    \coordinate (c) at (1.521,2.634);
+    \coordinate (d) at (0.559,1.022);
+    
+    \fill[fill=mlgb,opacity=0.6,even odd rule](a)--(b) arc (9.4623:60:3.0414)--(0.54,1.022) arc (60:26.56505:0.8)--(a) ;
+    
+    \draw[fill=black] (a) circle(2pt) node[anchor=north]{$a$};
+    \draw[fill=black] (b) circle(2pt) node[anchor=north]{$b$};
+    \draw[fill=black] (c) circle(2pt) node[anchor=south]{$c$};
+    \draw[fill=black] (d) circle(2pt) node[anchor=east]{$d$};
+    
+    \draw[line width=2pt,black,-] (a)--(b) node[midway, below]{$\overline{ab}$};
+    \draw[line width=2pt,black,-] (b) arc (9.4623:60:3.0414) node [midway,anchor=south west]{$\Vec{bc}$};
+    \draw[line width=2pt,black,-] (c)--(d) node[midway, above,sloped]{$\overline{cd}$};
+    \draw[line width=2pt,black,-] (a) arc (26.56505:60:1.18) node [midway,anchor=north east]{$\Vec{da}$};
+
+    
+    
+\end{tikzpicture}
+\caption{Segmento de disco en el plano complejo con lineas parametrizadas}

@@ -1,0 +1,11 @@
+\begin{tikzpicture}
+    \draw[thin,gray!40] (-3,-3) grid (3,3);
+    \fill[fill=vorange, fill opacity=0.6,even odd rule] (-3,-3) rectangle (3,3) (1,-3) rectangle (2,3);
+    \fill[fill=mlgb, fill opacity=0.6] (1,-3) rectangle (2,3);
+    \draw[<->] (-3,0)--(3,0) node[right] {$R$};
+    \draw[<->] (0,-3)--(0,3) node[above]{$j$};
+    
+    \draw[line width=2pt,black,stealth-stealth] (1,-3)--(1,3) node[midway, above left]{$\kappa_1$};
+    \draw[line width=2pt,black,stealth-stealth] (2,-3)--(2,3) node[midway, above right]{$\kappa_2$};
+\end{tikzpicture}
+\caption*{Lineas verticales}

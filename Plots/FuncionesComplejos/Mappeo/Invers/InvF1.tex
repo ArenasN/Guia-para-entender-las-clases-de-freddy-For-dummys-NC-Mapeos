@@ -1,0 +1,9 @@
+\begin{tikzpicture}[scale=0.7]
+    \draw[thin,gray!40] (-4,-4) grid (4,4);
+    \draw[<->] (-4,0)--(4,0) node[right] {$R$};
+    \draw[<->] (0,-4)--(0,4) node[above]{$j$};
+    \fill[fill=mlgb, fill opacity=0.6,even odd rule] (-4, -4) rectangle (4,4)(0, 0) circle (2);
+    \draw [black,line width=2pt,fill=vorange,fill opacity=0.6](0, 0) circle (2);
+    \draw[line width=1pt,|-|] (0,0) -- (2,0) node[midway,above,sloped]{$r=1$};
+\end{tikzpicture}
+\caption*{Regiones en el plano $z$}

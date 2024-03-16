@@ -1,0 +1,13 @@
+\begin{tikzpicture}
+    \draw[thin,gray!40] (-3,-3) grid (3,3);
+    \path[fill=mlgb,fill opacity=0.6] (-3,-3) rectangle (0,3);
+    \path[fill=vorange,fill opacity=0.6] (3,3) rectangle (0,-3);
+    
+    \draw[<->] (-3,0)--(3,0) node[right] {$R$};
+    \draw[<->] (0,-3)node [anchor=south east]{$-\pi$}--(0,3) node[above]{$j$} node [anchor=north east]{$\pi$};
+    \draw[line width=2pt,black,|-|] (1,-1.5)--(1,1.5) node[midway, anchor=south west]{$\ln{(r)}$};
+    \draw[line width=2.5pt,black,dashed] (0,-3)--(0,3);
+
+   
+\end{tikzpicture}
+\caption*{Plano $w$}

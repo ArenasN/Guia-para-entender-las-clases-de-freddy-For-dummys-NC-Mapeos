@@ -1,0 +1,32 @@
+\begin{tikzpicture}
+    \draw [thin,mlgb] (-6,-6) grid (6,6);
+    \draw[mlgb,<->] (-6,0)--(6,0) node[anchor= north west] {$R$};
+    \draw[mlgb,<->] (0,-6)--(0,6) node[anchor=south east]{$j$};
+    \draw[<->] (-6,0)--(6,0) node[anchor=south west] {$R'$};
+    \draw[<->] (0,6)--(0,-6) node[anchor=south west]{$j'$};
+    \clip (-6,-6) rectangle (6,6);
+    \foreach \c in {0.5,1,...,4.5} {
+        \draw[line width=0.75pt,gray] (\c,0) circle(\c);
+    }
+    \foreach \c in {0.5,1,...,4.5} {
+        \draw[line width=0.75pt,gray] (-\c,0) circle(\c);
+    }
+    \foreach \c in {0.5,1,...,4.5} {
+        \draw[line width=0.75pt,gray] (0,\c) circle(\c);
+    }
+    \foreach \c in {0.5,1,...,4.5} {
+        \draw[line width=0.75pt,gray] (0,-\c) circle(\c);
+    }
+    %\foreach \c in {1,2...,7} {
+    %    \draw[line width=1pt,gray!40] (0,(1/(2\c))) circle((1/(2\c))^2);
+    %}
+    % \draw[line width=1pt] (0,0) circle(2);
+    % \draw[line width=0.5pt,mlgb,dashed] (0,0) circle(2);
+    % \draw[line width=0.5pt,blue,dashed] (0,0) circle(1);
+    % \draw[line width=0.5pt,vorange,dashed] (0,0) circle(6);
+    % \draw[line width=1pt,blue] (0,0) circle(4);
+    % \draw[line width=1pt,vorange] (0,0) circle(0.6666);
+    
+    
+\end{tikzpicture}
+\caption{Plano $w$ graficado sobre el plano $z$ siendo $f_{z}$ un función reciproca}

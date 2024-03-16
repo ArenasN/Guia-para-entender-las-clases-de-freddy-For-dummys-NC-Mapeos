@@ -1,0 +1,17 @@
+\begin{tikzpicture}
+    \coordinate (a) at (0,-1);
+    
+    \draw[thin,gray!40] (-2,-2) grid (2,2);
+
+    \path[fill=mlgb, fill opacity=0.6,even odd rule] (-2, 0) rectangle (2,-2) (a) circle (1);
+    \path [line width=2pt,black,fill=vorange,fill opacity=0.6](a) circle (1);
+    
+    \draw[<->] (-2,0)--(2,0) node[right] {$R$};
+    \draw[<->] (0,-2)--(0,2) node[above]{$j$};
+    
+    
+    \draw[line width=2pt] (a) circle(1);
+    \draw[fill=black] (a) circle(2pt) node[below]{$\frac{1}{2\kappa}$};
+    \draw[line width=1pt,black,|-|] (0,0)--(a) node[midway,above,sloped]{$\frac{1}{2\kappa}$};
+\end{tikzpicture}
+\caption*{Mapeo linea horizontal}

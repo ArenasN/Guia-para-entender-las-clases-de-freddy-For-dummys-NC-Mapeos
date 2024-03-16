@@ -1,0 +1,10 @@
+\begin{tikzpicture}
+    \draw[thin,gray!40] (-2,-2) grid (2,2);
+    \draw[<->] (-2,0)--(2,0) node[right] {$R$};
+    \draw[<->] (0,-2)--(0,2) node[above]{$j$};
+    \filldraw[draw=gray!40, fill=mlgb, fill opacity=0.6] (-2,-0.5) -- (2,-0.5) -- (2,2) -- (-2,2);
+    \draw[line width=2pt,black,-] (-2,-0.5)--(2,-0.5);
+    \draw[fill=black] (0,-0.5) circle(2pt) node[anchor=north east]{$\kappa$};
+    \draw[] (0,1.2) node[right]{$S$};
+\end{tikzpicture}
+\caption{Superficie $S$}

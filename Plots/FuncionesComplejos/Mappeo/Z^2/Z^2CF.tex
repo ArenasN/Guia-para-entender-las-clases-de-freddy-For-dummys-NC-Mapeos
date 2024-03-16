@@ -1,0 +1,22 @@
+\begin{tikzpicture}
+    \draw [thin,mlgb] (-6,-6) grid (6,6);
+    \draw[mlgb,<->] (-6,0)--(6,0) node[anchor= south west] {$R$};
+    \draw[mlgb,<->] (0,-6)--(0,6) node[anchor=south east]{$j$};
+    \draw[<->] (0,0)--(6,0) node[anchor= north west] {$R'$};
+    \draw[<->] (0,0)--(-6,0) node[anchor=south east]{$j'$};
+
+    \foreach \c in {0.2,0.4,...,1} {
+        \draw [rotate=90,gray] plot[smooth,domain=-(sqrt((6+\c^2)*(4*\c^2))):(sqrt((6+\c^2)*(4*\c^2)))](\x, {((\x)^2/(4*\c^2))-\c^2});
+    }
+    \foreach \c in {1.2,1.4,...,2.4} {
+        \draw [rotate=90,gray] plot[smooth,domain=-6:6](\x, {((\x)^2/(4*\c^2))-\c^2});
+    }
+
+   \foreach \c in {0.2,0.4,...,1} {
+        \draw [rotate=-90,gray] plot[smooth,domain=-(sqrt((6+\c^2)*(4*\c^2))):(sqrt((6+\c^2)*(4*\c^2)))](\x, {((\x)^2/(4*\c^2))-\c^2});
+    }
+    \foreach \c in {1.2,1.4,...,2.4} {
+        \draw [rotate=-90,gray] plot[smooth,domain=-6:6](\x, {((\x)^2/(4*\c^2))-\c^2});
+    }
+\end{tikzpicture}
+\caption{Plano $w$ graficado sobre el plano $z$ siendo $f_{z}$ un función $z^2$}
