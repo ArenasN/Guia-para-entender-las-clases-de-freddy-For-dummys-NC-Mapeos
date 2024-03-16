@@ -1,0 +1,12 @@
+\begin{tikzpicture}
+\begin{axis}[
+ view={110}{15},
+    %unbounded coords=jump,
+    %z filter/.expression={
+    %    z>10 ? nan : z
+    %}
+]
+\addplot3[surf,]{sqrt((x^2-y^2)^2+(2*x*y)^2)};
+\end{axis}
+\end{tikzpicture}
+\caption*{Campo escalar del modulo}

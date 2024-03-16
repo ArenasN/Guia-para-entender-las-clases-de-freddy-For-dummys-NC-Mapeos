@@ -1,0 +1,17 @@
+\begin{tikzpicture}
+    \draw[thin,gray!40] (0,0) grid (4,4);
+    \draw[<->] (0,0)--(4,0) node[right] {$R$};
+    \draw[<->] (0,0)--(0,4) node[above]{$j$};
+
+    \coordinate (a) at (2,2);
+    \coordinate (b) at (2.707,2.707);
+    
+    \path[fill=gray,fill opacity=0.6,dashed,line width=1pt,even odd rule] (a) circle(2) (a) circle(1);
+    \draw[fill=mlgb,fill opacity=0.6,dashed,line width=1pt] (a) circle(1);
+    \draw[line width=1pt,black,dashed] (a) circle(2);
+    
+    \draw[line width=2pt,black,-] (a) circle(1pt) node[anchor=north west]{$z_0$};
+    \draw[line width=1pt,black,|-|] (a)--(b) node[midway,above,sloped]{$\delta$};
+    \draw[line width=1pt,black,|-|] (a)--(0,2) node[midway,above,sloped]{$\delta_0$};
+\end{tikzpicture}
+\caption*{Plano $z$}
